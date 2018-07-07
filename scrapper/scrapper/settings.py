@@ -25,6 +25,7 @@ ROBOTSTXT_OBEY = True
 
 ITEM_PIPELINES = {
     'scrapper.pipelines.MongoPipeline': 300,
+
 }
 MONGO_URI = 'mongodb://localhost:27017'
 MONGO_DATABASE = 'scrapy'

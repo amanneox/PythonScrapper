@@ -12,5 +12,6 @@ class NearbySpider(scrapy.Spider):
         item['name'] = response.xpath('//h3[contains(@class, "card__title")]/text()').extract()
         item['value'] = response.xpath('//p[contains(@class, "actual-price")]/text()').extract()
         item['location'] = response.xpath('//h3[contains(@class, "card__location")]/text()').extract()
+        
         yield item
         
